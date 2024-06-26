@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mert409 Hesabı</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <script type="module" src="auth.js"></script>
+</head>
+<body>
+    <div class="container" id="signup" style="display:none;">
+      <h1 class="form-title">Kaydol</h1>
+      <form method="post" action="">
+        <div id="signUpMessage" class="messageDiv" style="display:none;"></div>
+        <div class="input-group">
+           <i class="fas fa-user"></i>
+           <input type="text"  id="fName" placeholder="Kullanıcı adı" required>
+           <label for="fname">Kullanıcı adı</label>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="rPassword"  placeholder="Şifre" required>
+            <label for="rPassword">Şifre</label>
+        </div>
+       <button class="btn" id="submitSignUp" >Kaydol</button>
+      </form>
+      <div class="links">
+        <p>Zaten hesabın var mı? </p>
+        <button id="signInButton">Giriş yap</button>
+        <button id="epostaile">E-posta ile kaydol</button>
+      </div>
+      <p>Kaydolarak <a href="https://sites.google.com/view/mert409/gizlilik-ve-%C5%9Fartlar">gizlilik politikasını ve hizmet şartlarını</a> kabul etmiş olursun. </p>  
+    </div>
+
+  <div class="container" id="signIn">
+        <h1 class="form-title">Giriş yap</h1>
+        <form method="post" action="">
+          <div id="signInMessage" class="messageDiv" style="display:none;"></div>
+          <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="email"  id="rEmail" placeholder="E-posta adresi" required>
+            <label for="rEmail">Kullanıcı adı</label>
+          </div>
+          <div class="input-group">
+              <i class="fas fa-lock"></i>
+            <input type="password" id="password"  placeholder="Şifre" required>
+              <label for="password">Şifre</label>
+          </div>
+         <button  class="btn"  id="submitSignIn">Giriş</button>
+        </form>
+        <div class="links">
+          <p>Hesabın yok mu?</p>
+          <button id="signUpButton">Kaydol</button>
+          <button id="epostaile">E-posta ile giriş</button>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

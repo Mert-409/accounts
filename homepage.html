@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mert409 Hesabı</title>
+    <link rel="icon" href="logo.png" type="image/png">
+    <style>
+        body{
+            padding:30px;
+            background:linear-gradient(to right, #e2e2e2, #c9d6ff);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align:center;
+
+        }
+        button{
+            color:deepskyblue;
+            background-color:white;
+            padding:5px;
+            border-radius:5px;
+            font-size:1rem;
+            font-weight:bold;
+            border:none;
+        }
+        button:hover{
+            text-decoration: underline;
+            color:blue;
+        }
+        button, div{
+            margin-left:15%;
+            font-size:20px;
+            padding:10px;
+        }
+        div{
+            font-weight:400;
+            color:rgb(12,11,11);
+
+        }
+        span{
+            font-weight:600;
+            font-size:22px;
+            color:black;
+        }
+    </style>
+    <script type="module" src="homepage.js"></script>
+</head>
+<body>
+    <h1>Mert409 Hesabınız</h1>
+    <div>Kullanıcı adı: <span id="loggedUserFName"></span></div>
+    <div>mCoin: <span id="loggedUserCoin"></span></div>
+    <button id="logout">Çıkış yap</button>
+</body>
+</html>
